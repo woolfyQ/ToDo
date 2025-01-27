@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\components\\pages\\todos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\components\\pages\\todos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\components\\pages\\todos.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\components\\pages\\todos.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D063AD-C9A3-4CAF-A3DF-2F1AB4AEFF78}|Core\\Core.csproj|c:\\users\\pc_work\\source\\repos\\todo\\core\\entity\\todolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D063AD-C9A3-4CAF-A3DF-2F1AB4AEFF78}|Core\\Core.csproj|solutionrelative:core\\entity\\todolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E188D9F0-8508-4D1F-A056-941DE43A8398}|ToDoAPI\\ToDoAPI.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todoapi\\controllers\\todotaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E188D9F0-8508-4D1F-A056-941DE43A8398}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\controllers\\todotaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\serviceclient\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\serviceclient\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\components\\pages\\calendar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\components\\pages\\calendar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToDos.razor.css",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\ToDos.razor.css",
+              "RelativeDocumentMoniker": "ToDo\\Components\\Pages\\ToDos.razor.css",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\ToDos.razor.css",
+              "RelativeToolTip": "ToDo\\Components\\Pages\\ToDos.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-27T18:23:10.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ToDos.razor",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\ToDos.razor",
+              "RelativeDocumentMoniker": "ToDo\\Components\\Pages\\ToDos.razor",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\ToDos.razor",
+              "RelativeToolTip": "ToDo\\Components\\Pages\\ToDos.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T12:12:19.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Program.cs",
+              "RelativeDocumentMoniker": "ToDo\\Program.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Program.cs",
+              "RelativeToolTip": "ToDo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T13:14:03.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ToDoList.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Core\\Entity\\ToDoList.cs",
+              "RelativeDocumentMoniker": "Core\\Entity\\ToDoList.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Core\\Entity\\ToDoList.cs",
+              "RelativeToolTip": "Core\\Entity\\ToDoList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T13:12:45.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ToDoTaskController.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDoAPI\\Controllers\\ToDoTaskController.cs",
+              "RelativeDocumentMoniker": "ToDoAPI\\Controllers\\ToDoTaskController.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDoAPI\\Controllers\\ToDoTaskController.cs",
+              "RelativeToolTip": "ToDoAPI\\Controllers\\ToDoTaskController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:43:18.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToDoService.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\ServiceClient\\ToDoService.cs",
+              "RelativeDocumentMoniker": "ToDo\\ServiceClient\\ToDoService.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\ServiceClient\\ToDoService.cs",
+              "RelativeToolTip": "ToDo\\ServiceClient\\ToDoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T12:40:45.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "ToDo\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "ToDo\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T10:57:01.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "ToDo\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "ToDo\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T11:04:35.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Calendar.razor",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\Calendar.razor",
+              "RelativeDocumentMoniker": "ToDo\\Components\\Pages\\Calendar.razor",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\Calendar.razor",
+              "RelativeToolTip": "ToDo\\Components\\Pages\\Calendar.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T12:04:18.526Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

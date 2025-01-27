@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "ToDoAPI.Controllers.ToDoTaskController",
+    "Method": "Create",
+    "RelativePath": "api/ToDoTask/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "toDoList",
+        "Type": "Core.Entity.ToDoList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ToDoTaskController",
+    "Method": "Delete",
+    "RelativePath": "api/ToDoTask/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "toDoList",
+        "Type": "Core.Entity.ToDoList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ToDoTaskController",
+    "Method": "GetById",
+    "RelativePath": "api/ToDoTask/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ToDoTaskController",
+    "Method": "Update",
+    "RelativePath": "api/ToDoTask/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "toDoList",
+        "Type": "Core.Entity.ToDoList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

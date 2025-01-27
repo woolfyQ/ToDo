@@ -1,0 +1,61 @@
+﻿@page "/ToDos"
+@using Core.Entity
+@inject ToDo.ServiceClient.ToDoService ToDoService
+@inject NavigationManager NavigationManager
+
+<h3>Create New ToDo Task</h3>
+
+<EditForm FormName="NewToDo" Model="@toDoList" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="name">Title:</label>
+        <InputText id="Title" class="form-control" @bind-Value="toDoList.Name" />
+        <ValidationMessage For="@(() => toDoList.Name)" />
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <InputTextArea id="description" class="form-control" @bind-Value="toDoList.Description" />
+        <ValidationMessage For="@(() => toDoList.Description)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Task</button>
+</EditForm>
+
+@if (errorMessage != null)
+{
+    <div class="alert alert-danger mt-3">
+        @errorMessage
+    </div>
+}
+
+@code {
+    [SupplyParameterFromForm(FormName = "NewToDo")]
+    public ToDoList toDoList { get; set; } = new();
+    private string errorMessage;
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            var result = await ToDoService.CreateTask(toDoList);
+            if (result)
+            {
+                
+                toDoList = new ToDoList();
+                errorMessage = null;
+                NavigationManager.NavigateTo("/ToDos"); // Перенаправление на страницу списка задач
+            }
+            else
+            {
+                errorMessage = "Failed to create the task. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"An error occurred: {ex.Message}";
+        }
+    }
+}

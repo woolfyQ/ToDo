@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToDo.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ToDo.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\wwwroot\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap.min.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ToDo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ToDo.props",
+      "PackagePath": "build\\ToDo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ToDo.props",
+      "PackagePath": "buildMultiTargeting\\ToDo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ToDo.props",
+      "PackagePath": "buildTransitive\\ToDo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
