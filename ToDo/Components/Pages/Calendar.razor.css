@@ -1,0 +1,56 @@
+﻿.calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 7 дней недели */
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 80px repeat(7, 1fr); /* Час и 7 столбцов */
+    border-bottom: 1px solid #ccc;
+}
+
+.hour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.day-cell {
+    border-right: 1px solid #eee;
+    min-height: 50px;
+    padding: 5px;
+    position: relative;
+}
+
+    .day-cell:last-child {
+        border-right: none;
+    }
+
+.event {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 3px;
+}

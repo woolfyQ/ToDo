@@ -17,7 +17,81 @@
         right: 0.75rem;
         top: 0.5rem;
     }
+/* _content/ToDo/Components/Pages/Calendar.razor.rz.scp.css */
+.calendar[b-3mulvqf2tz] {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.header[b-3mulvqf2tz] {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 7 дней недели */
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+.body[b-3mulvqf2tz] {
+    display: flex;
+    flex-direction: column;
+}
+
+.row[b-3mulvqf2tz] {
+    display: grid;
+    grid-template-columns: 80px repeat(7, 1fr); /* Час и 7 столбцов */
+    border-bottom: 1px solid #ccc;
+}
+
+.hour[b-3mulvqf2tz] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.day-cell[b-3mulvqf2tz] {
+    border-right: 1px solid #eee;
+    min-height: 50px;
+    padding: 5px;
+    position: relative;
+}
+
+    .day-cell:last-child[b-3mulvqf2tz] {
+        border-right: none;
+    }
+
+.event[b-3mulvqf2tz] {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
 /* _content/ToDo/Components/Pages/ToDos.razor.rz.scp.css */
-.Form[b-q36ifymh8c]{
-    width:250px;
+.MainForm[b-q36ifymh8c] {
+    max-width: 250px;
+    border: solid 1px;
+    border-radius: 10px
+}
+.task-list[b-q36ifymh8c] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-card[b-q36ifymh8c] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }

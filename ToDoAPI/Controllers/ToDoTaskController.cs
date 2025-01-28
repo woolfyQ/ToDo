@@ -36,10 +36,17 @@ namespace ToDoAPI.Controllers
             return Ok(updateList);
         }
         [HttpDelete("Delete")]
-        public async Task<IActionResult> Delete(ToDoList toDoList)
+        public async Task<IActionResult> Delete(Guid Id )
         {
-            var deleteList = await _toDoService.Delete(toDoList);
+            var deleteList = await _toDoService.Delete(Id);
             return Ok(deleteList);
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAll()
+        {
+            var allList = await _toDoService.GetAll();
+            return Ok(allList);
         }
 
     }

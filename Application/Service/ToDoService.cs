@@ -55,9 +55,9 @@ namespace Application.Service
 
         }
 
-        public async Task<ToDoList>Delete(ToDoList toDoList)
+        public async Task<ToDoList>Delete(Guid Id)
         {
-            var existingToDoList = await GetById(toDoList.Id);
+            var existingToDoList = await GetById(Id);
 
             if (existingToDoList == null)
             {
@@ -69,12 +69,12 @@ namespace Application.Service
 
             return existingToDoList;
         }
-        public async Task<IEnumerable<ToDoList>>GetAll(ToDoList toDoList)
+        public async Task<IEnumerable<ToDoList>> GetAll()
         {
             return await _applicationDbContext.ToDoLists.ToListAsync();
         }
 
-       
+
 
 
     }

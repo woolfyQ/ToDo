@@ -30,10 +30,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC_Work/source/repos/ToDo/ToDo/Components/Pages/Calendar.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYWxlbmRhci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/PC_Work/source/repos/ToDo/ToDo/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -53,6 +49,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/PC_Work/source/repos/ToDo/ToDo/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-wr201l1ba8
+
+[C:/Users/PC_Work/source/repos/ToDo/ToDo/Components/Pages/Calendar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYWxlbmRhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-3mulvqf2tz
 
 [C:/Users/PC_Work/source/repos/ToDo/ToDo/Components/Pages/ToDos.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb0Rvcy5yYXpvcg==

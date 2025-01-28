@@ -39,21 +39,14 @@ namespace ToDo.ServiceClient
             }
 
         }
-        //public async Task<bool> DeleteTask(ToDoList toDoList)
-        //{
-        //    var reponse = await _httpClient.DeleteAsync("api/ToDoTask/Delete", toDoList);
-        //    if (reponse.IsSuccessStatusCode)
-        //    {
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //        throw new Exception("Delete client service Error");
-        //    }
 
 
+        public async Task<IEnumerable<ToDoList>> GetAll()
+        {
+            return await _httpClient.GetFromJsonAsync<IEnumerable<ToDoList>>("api/ToDoTask/GetAll");
+        }
 
+       
 
     }
 }

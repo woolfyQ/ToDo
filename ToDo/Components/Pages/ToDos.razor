@@ -8,7 +8,9 @@
 <EditForm FormName="NewToDo" Model="@toDoList" OnValidSubmit="@HandleValidSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
+    <div class="MainForm">
 
+   
     <div class="form-group">
         <label for="name">Title:</label>
         <InputText id="Title" class="form-control" @bind-Value="toDoList.Name" />
@@ -22,7 +24,34 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Add Task</button>
+    </div>
 </EditForm>
+<h3>ToDo Lists</h3>
+
+@if (toDoLists == null)
+{
+    <p>Loading...</p>
+}
+else if (!toDoLists.Any())
+{
+    <p>No tasks found.</p>
+}
+else
+{
+    <div class="task-list">
+        @foreach (var task in toDoLists)
+        {
+            <div class="task-card">
+                <div>
+                    <strong>@task.Name</strong>
+                    <p>@task.Description</p>
+                </div>
+                <div class="task-actions">
+                </div>
+            </div>
+        }
+    </div>
+}
 
 @if (errorMessage != null)
 {
@@ -35,6 +64,7 @@
     [SupplyParameterFromForm(FormName = "NewToDo")]
     public ToDoList toDoList { get; set; } = new();
     private string errorMessage;
+    private IEnumerable<ToDoList> toDoLists;
 
     private async Task HandleValidSubmit()
     {
@@ -43,7 +73,7 @@
             var result = await ToDoService.CreateTask(toDoList);
             if (result)
             {
-                
+
                 toDoList = new ToDoList();
                 errorMessage = null;
                 NavigationManager.NavigateTo("/ToDos"); // Перенаправление на страницу списка задач
@@ -57,5 +87,9 @@
         {
             errorMessage = $"An error occurred: {ex.Message}";
         }
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        toDoLists = await ToDoService.GetAll();
     }
 }

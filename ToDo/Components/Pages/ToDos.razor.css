@@ -1,3 +1,20 @@
-﻿.Form{
-    width:250px;
+﻿.MainForm {
+    max-width: 250px;
+    border: solid 1px;
+    border-radius: 10px
+}
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }

@@ -51,3 +51,4 @@ C:\Users\PC_Work\source\repos\ToDo\ToDoAPI\obj\Debug\net8.0\refint\ToDoAPI.dll
 C:\Users\PC_Work\source\repos\ToDo\ToDoAPI\obj\Debug\net8.0\ToDoAPI.pdb
 C:\Users\PC_Work\source\repos\ToDo\ToDoAPI\obj\Debug\net8.0\ToDoAPI.genruntimeconfig.cache
 C:\Users\PC_Work\source\repos\ToDo\ToDoAPI\obj\Debug\net8.0\ref\ToDoAPI.dll
+C:\Users\PC_Work\source\repos\ToDo\ToDoAPI\obj\Debug\net8.0\ToDoAPI.sourcelink.json

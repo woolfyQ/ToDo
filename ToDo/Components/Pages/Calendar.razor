@@ -1,6 +1,56 @@
 ﻿@page "/Calendar"
 
+@page "/WeekCalendar"
+@using Core.Entity
+@inject ToDo.ServiceClient.ToDoService ToDoService
 
-@code {
+<h3>Week Calendar</h3>
 
+<div class="calendar">
+   
+    <div class="header">
+        @foreach (var day in weekDays)
+        {
+            <div class="day-header">
+                @day.ToString("dddd, MMM dd") 
+            </div>
+        }
+    </div>
+
+    <!-- Сетка задач -->
+    <div class="body">
+        @foreach (var hour in hours)
+        {
+            <div class="row">
+                <div class="hour">@hour</div> <!-- Часы -->
+                @foreach (var day in weekDays)
+                {
+                   
+                }
+            </div>
+        }
+    </div>
+</div>
+
+@code 
+{
+   
+    private DateTime[] weekDays;
+    private string[] hours = Enumerable.Range(0, 24).Select(h => $"{h}:00").ToArray(); 
+
+   
+    private Dictionary<(DateTime day, string hour), List<ToDoList>> events;
+
+    protected override async Task OnInitializedAsync()
+    {
+     
+        var startOfWeek = DateTime.Now.AddDays(-(int)DateTime.Now.DayOfWeek + 1); 
+        weekDays = Enumerable.Range(0, 7).Select(offset => startOfWeek.AddDays(offset)).ToArray();
+
+      
+        var tasks = await ToDoService.GetAll();
+
+       
+       
+    }
 }

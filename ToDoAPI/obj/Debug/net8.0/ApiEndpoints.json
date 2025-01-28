@@ -24,9 +24,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "toDoList",
-        "Type": "Core.Entity.ToDoList",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -45,6 +45,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ToDoTaskController",
+    "Method": "GetAll",
+    "RelativePath": "api/ToDoTask/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
