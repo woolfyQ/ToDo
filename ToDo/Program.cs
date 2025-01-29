@@ -11,7 +11,10 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
 builder.Services.AddScoped<ToDoService> ();
+
 var app = builder.Build();
 
 

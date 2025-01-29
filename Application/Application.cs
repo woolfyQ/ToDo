@@ -8,6 +8,7 @@ namespace Application
         public static void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ToDoService>();
+            services.AddScoped<ColumnService>();
         }
     }
 }

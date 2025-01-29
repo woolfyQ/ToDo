@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{10D063AD-C9A3-4CAF-A3DF-2F1AB4AEFF78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoAPI", "ToDoAPI\ToDoAPI.csproj", "{E188D9F0-8508-4D1F-A056-941DE43A8398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoAPI", "ToDoAPI\ToDoAPI.csproj", "{E188D9F0-8508-4D1F-A056-941DE43A8398}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

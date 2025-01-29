@@ -1,10 +1,3 @@
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.csproj.AssemblyReference.cache
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.AssemblyInfoInputs.cache
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.AssemblyInfo.cs
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.csproj.CoreCompileInputs.cache
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\PC_Work\source\repos\ToDo\ToDo\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\PC_Work\source\repos\ToDo\ToDo\bin\Debug\net8.0\appsettings.json
 C:\Users\PC_Work\source\repos\ToDo\ToDo\bin\Debug\net8.0\ToDo.staticwebassets.runtime.json
@@ -125,6 +118,14 @@ C:\Users\PC_Work\source\repos\ToDo\ToDo\bin\Debug\net8.0\Data.dll
 C:\Users\PC_Work\source\repos\ToDo\ToDo\bin\Debug\net8.0\Application.pdb
 C:\Users\PC_Work\source\repos\ToDo\ToDo\bin\Debug\net8.0\Core.pdb
 C:\Users\PC_Work\source\repos\ToDo\ToDo\bin\Debug\net8.0\Data.pdb
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.csproj.AssemblyReference.cache
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.AssemblyInfoInputs.cache
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.AssemblyInfo.cs
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.csproj.CoreCompileInputs.cache
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.sourcelink.json
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\staticwebassets\msbuild.ToDo.Microsoft.AspNetCore.StaticWebAssets.props
@@ -133,6 +134,8 @@ C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\staticwebassets\msbuild
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ToDo.props
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\scopedcss\Components\Pages\Calendar.razor.rz.scp.css
+C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\scopedcss\Components\Pages\ToDos.razor.rz.scp.css
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\scopedcss\bundle\ToDo.styles.css
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\scopedcss\projectbundle\ToDo.bundle.scp.css
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.csproj.Up2Date
@@ -141,6 +144,3 @@ C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\refint\ToDo.dll
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.pdb
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.genruntimeconfig.cache
 C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ref\ToDo.dll
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\scopedcss\Components\Pages\ToDos.razor.rz.scp.css
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\ToDo.sourcelink.json
-C:\Users\PC_Work\source\repos\ToDo\ToDo\obj\Debug\net8.0\scopedcss\Components\Pages\Calendar.razor.rz.scp.css

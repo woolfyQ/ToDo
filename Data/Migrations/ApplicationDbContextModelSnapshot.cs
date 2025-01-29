@@ -22,6 +22,26 @@ namespace Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Core.Entity.Column", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid?>("ToDoListId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ToDoListId");
+
+                    b.ToTable("Columns");
+                });
+
             modelBuilder.Entity("Core.Entity.ToDoList", b =>
                 {
                     b.Property<Guid>("Id")
@@ -39,6 +59,15 @@ namespace Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ToDoLists");
+                });
+
+            modelBuilder.Entity("Core.Entity.Column", b =>
+                {
+                    b.HasOne("Core.Entity.ToDoList", "ToDoList")
+                        .WithMany()
+                        .HasForeignKey("ToDoListId");
+
+                    b.Navigation("ToDoList");
                 });
 #pragma warning restore 612, 618
         }

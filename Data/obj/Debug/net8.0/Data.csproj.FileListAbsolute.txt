@@ -9,6 +9,7 @@ C:\Users\PC_Work\source\repos\ToDo\Data\obj\Debug\net8.0\Data.GeneratedMSBuildEd
 C:\Users\PC_Work\source\repos\ToDo\Data\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
 C:\Users\PC_Work\source\repos\ToDo\Data\obj\Debug\net8.0\Data.AssemblyInfo.cs
 C:\Users\PC_Work\source\repos\ToDo\Data\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\PC_Work\source\repos\ToDo\Data\obj\Debug\net8.0\Data.sourcelink.json
 C:\Users\PC_Work\source\repos\ToDo\Data\obj\Debug\net8.0\Data.csproj.Up2Date
 C:\Users\PC_Work\source\repos\ToDo\Data\obj\Debug\net8.0\Data.dll
 C:\Users\PC_Work\source\repos\ToDo\Data\obj\Debug\net8.0\refint\Data.dll

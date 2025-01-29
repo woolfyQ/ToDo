@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "C+1aDmahMJE=",
+  "dgSpecHash": "uoRAx2XXqbo=",
   "success": true,
   "projectFilePath": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\ToDo.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\PC_Work\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.1\\microsoft.entityframeworkcore.analyzers.9.0.1.nupkg.sha512",
     "C:\\Users\\PC_Work\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.1\\microsoft.entityframeworkcore.design.9.0.1.nupkg.sha512",
     "C:\\Users\\PC_Work\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.1\\microsoft.entityframeworkcore.relational.9.0.1.nupkg.sha512",
+    "C:\\Users\\PC_Work\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.1\\microsoft.entityframeworkcore.tools.9.0.1.nupkg.sha512",
     "C:\\Users\\PC_Work\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.1\\microsoft.extensions.caching.abstractions.9.0.1.nupkg.sha512",
     "C:\\Users\\PC_Work\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.1\\microsoft.extensions.caching.memory.9.0.1.nupkg.sha512",
     "C:\\Users\\PC_Work\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.1\\microsoft.extensions.configuration.abstractions.9.0.1.nupkg.sha512",

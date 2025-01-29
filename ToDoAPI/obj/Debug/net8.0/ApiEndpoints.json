@@ -1,5 +1,69 @@
 [
   {
+    "ContainingType": "ToDoAPI.Controllers.ColumnController",
+    "Method": "Create",
+    "RelativePath": "api/Column/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "column",
+        "Type": "Core.Entity.Column",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ColumnController",
+    "Method": "Delete",
+    "RelativePath": "api/Column/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ColumnController",
+    "Method": "GetById",
+    "RelativePath": "api/Column/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ColumnController",
+    "Method": "Update",
+    "RelativePath": "api/Column/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "column",
+        "Type": "Core.Entity.Column",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ToDoAPI.Controllers.ToDoTaskController",
     "Method": "Create",
     "RelativePath": "api/ToDoTask/Create",

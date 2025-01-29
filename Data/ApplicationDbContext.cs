@@ -11,6 +11,6 @@ namespace Data
 
         }
         public DbSet<ToDoList> ToDoLists { get; set; }
-
+        public DbSet<Column> Columns { get; set; }
     }
 }
