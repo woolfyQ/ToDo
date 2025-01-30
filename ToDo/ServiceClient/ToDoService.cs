@@ -40,6 +40,19 @@ namespace ToDo.ServiceClient
 
         }
 
+        public async Task<bool>Delete(CancellationToken cancellationToken)
+        {
+            var response = await _httpClient.DeleteAsync("api/ToDoTask/Update", cancellationToken);
+            if (response.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
 
         public async Task<IEnumerable<ToDoList>> GetAll()
         {

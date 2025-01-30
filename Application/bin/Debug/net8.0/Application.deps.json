@@ -660,10 +660,7 @@
           "Microsoft.EntityFrameworkCore": "9.0.1"
         },
         "runtime": {
-          "Core.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Core.dll": {}
         }
       },
       "Data/1.0.0": {
@@ -674,10 +671,7 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.3"
         },
         "runtime": {
-          "Data.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Data.dll": {}
         }
       }
     }
