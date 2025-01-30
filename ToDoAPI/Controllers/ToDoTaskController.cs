@@ -35,7 +35,7 @@ namespace ToDoAPI.Controllers
            var updateList = await _toDoService.Update(toDoList);
             return Ok(updateList);
         }
-        [HttpDelete("Delete")]
+        [HttpDelete("Delete/{Id}")]
         public async Task<IActionResult> Delete(Guid Id )
         {
             var deleteList = await _toDoService.Delete(Id);

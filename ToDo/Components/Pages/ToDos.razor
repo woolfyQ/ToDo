@@ -1,86 +1,108 @@
 ﻿@page "/ToDos"
 @using Core.Entity
 @using ToDo.ServiceClient
+@rendermode InteractiveServer
 @inject ToDo.ServiceClient.ToDoService ToDoService
 @inject ColumnClientService ColumnClient
 @inject NavigationManager NavigationManager
 
-<h3>Create New ToDo Task</h3>
-
-<EditForm FormName="NewToDo" Model="@toDoList" OnValidSubmit="@HandleValidSubmit">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-    <div class="MainForm">
-
-   
-    <div class="form-group">
-        <label for="name">Title:</label>
-        <InputText id="Title" class="form-control" @bind-Value="toDoList.Name" />
-        <ValidationMessage For="@(() => toDoList.Name)" />
+<div class="todos-container">
+    <div class="create-task-section">
+        <h3>Create New Task</h3>
+        <EditForm FormName="NewToDo" Model="@toDoList" OnValidSubmit="@HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="task-form">
+                <div class="form-group">
+                    <label for="name">Title</label>
+                    <InputText id="Title" class="form-control" @bind-Value="toDoList.Name" placeholder="Enter task title" />
+                    <ValidationMessage For="@(() => toDoList.Name)" />
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <InputTextArea id="description" class="form-control" @bind-Value="toDoList.Description" placeholder="Enter task description" />
+                    <ValidationMessage For="@(() => toDoList.Description)" />
+                </div>
+                <button type="submit" class="btn-create">
+                    <i class="fas fa-plus"></i> Add Task
+                </button>
+            </div>
+        </EditForm>
     </div>
 
-    <div class="form-group">
-        <label for="description">Description:</label>
-        <InputTextArea id="description" class="form-control" @bind-Value="toDoList.Description" />
-        <ValidationMessage For="@(() => toDoList.Description)" />
-    </div>
-
-    <button type="submit" class="btn btn-primary">Add Task</button>
-    </div>
-</EditForm>
-<h3>ToDo Lists</h3>
-
-@if (toDoLists == null)
-{
-    <p>Loading...</p>
-}
-else if (!toDoLists.Any())
-{
-    <p>No tasks found.</p>
-}
-else
-{
-    <div class="task-list">
-        @foreach (var task in toDoLists)
+    <div class="tasks-section">
+        <h3>My Tasks</h3>
+        @if (toDoLists == null)
         {
-            <div class="task-card">
-                <div>
-                    <strong>@task.Name</strong>
-                    <p>@task.Description</p>
-                </div>
-                <div class="task-actions">
-                    <button class="btn-danger" @onclick="() => Delete()">Delete</button>
-                </div>
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading tasks...</p>
+            </div>
+        }
+        else if (!toDoLists.Any())
+        {
+            <div class="empty-state">
+                <i class="fas fa-clipboard-list"></i>
+                <p>No tasks found. Create your first task!</p>
+            </div>
+        }
+        else
+        {
+            <div class="task-list">
+                @foreach (var task in toDoLists)
+                {
+                    <div class="task-card">
+                        <div class="task-content">
+                            <h4>@task.Name</h4>
+                            <p>@task.Description</p>
+                        </div>
+                        <div class="task-actions">
+                            <button class="btn-delete" @onclick="() => Delete(task.Id)">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                }
             </div>
         }
     </div>
-}
 
-@if (errorMessage != null)
-{
-    <div class="alert alert-danger mt-3">
-        @errorMessage
-    </div>
-}
-
+    @if (errorMessage != null)
+    {
+        <div class="error-message">
+            <i class="fas fa-exclamation-circle"></i>
+            @errorMessage
+        </div>
+    }
+</div>
 @code {
     [SupplyParameterFromForm(FormName = "NewToDo")]
     public ToDoList toDoList { get; set; } = new();
     private string errorMessage;
     private IEnumerable<ToDoList> toDoLists;
-
-    private async Task Delete(IEnumerable<ToDoList> toDoLists)
-    {
-
-        try
+   
+        private async Task Delete(Guid taskId)
         {
-            var result = await ToDoService.Delete()
+            try
+            {
+                var result = await ToDoService.Delete(taskId, CancellationToken.None);
+                if (result)
+                {
+                    toDoLists = await ToDoService.GetAll();
+                    errorMessage = null;
+                }
+                else
+                {
+                    errorMessage = "Failed to delete the task.";
+                }
+            }
+            catch (Exception ex)
+            {
+                errorMessage = $"An error occurred while deleting: {ex.Message}";
+            }
+            StateHasChanged();
         }
-
-
-
-    }
-
+    
 
     private async Task HandleValidSubmit()
     {

@@ -32,12 +32,10 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid?>("ToDoListId")
-                        .HasColumnType("uuid");
+                    b.Property<int>("Order")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ToDoListId");
 
                     b.ToTable("Columns");
                 });
@@ -48,26 +46,33 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<Guid?>("ColumnId")
+                        .HasColumnType("uuid");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ColumnId");
+
                     b.ToTable("ToDoLists");
+                });
+
+            modelBuilder.Entity("Core.Entity.ToDoList", b =>
+                {
+                    b.HasOne("Core.Entity.Column", null)
+                        .WithMany("Tasks")
+                        .HasForeignKey("ColumnId");
                 });
 
             modelBuilder.Entity("Core.Entity.Column", b =>
                 {
-                    b.HasOne("Core.Entity.ToDoList", "ToDoList")
-                        .WithMany()
-                        .HasForeignKey("ToDoListId");
-
-                    b.Navigation("ToDoList");
+                    b.Navigation("Tasks");
                 });
 #pragma warning restore 612, 618
         }

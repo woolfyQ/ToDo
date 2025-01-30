@@ -1,22 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Volko\\ToDo\\",
+  "WorkspaceRootPath": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\volko\\todo\\todo\\serviceclient\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\serviceclient\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\components\\pages\\board.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\components\\pages\\board.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\volko\\todo\\todo\\components\\pages\\todos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\components\\pages\\todos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\components\\pages\\todos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\volko\\todo\\todo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\serviceclient\\columnclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\serviceclient\\columnclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\volko\\todo\\todo\\serviceclient\\columnclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\serviceclient\\columnclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E188D9F0-8508-4D1F-A056-941DE43A8398}|ToDoAPI\\ToDoAPI.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todoapi\\controllers\\columncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E188D9F0-8508-4D1F-A056-941DE43A8398}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\controllers\\columncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|c:\\users\\pc_work\\source\\repos\\todo\\todo\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEDEBE18-B500-49B1-B485-2604AACAFB30}|ToDo\\ToDo.csproj|solutionrelative:todo\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D063AD-C9A3-4CAF-A3DF-2F1AB4AEFF78}|Core\\Core.csproj|c:\\users\\pc_work\\source\\repos\\todo\\core\\entity\\todolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D063AD-C9A3-4CAF-A3DF-2F1AB4AEFF78}|Core\\Core.csproj|solutionrelative:core\\entity\\todolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8EF260D-C55D-44B4-989B-DADD5C688035}|Application\\Application.csproj|c:\\users\\pc_work\\source\\repos\\todo\\application\\service\\columnservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8EF260D-C55D-44B4-989B-DADD5C688035}|Application\\Application.csproj|solutionrelative:application\\service\\columnservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8EF260D-C55D-44B4-989B-DADD5C688035}|Application\\Application.csproj|c:\\users\\pc_work\\source\\repos\\todo\\application\\service\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8EF260D-C55D-44B4-989B-DADD5C688035}|Application\\Application.csproj|solutionrelative:application\\service\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10D063AD-C9A3-4CAF-A3DF-2F1AB4AEFF78}|Core\\Core.csproj|c:\\users\\pc_work\\source\\repos\\todo\\core\\entity\\column.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10D063AD-C9A3-4CAF-A3DF-2F1AB4AEFF78}|Core\\Core.csproj|solutionrelative:core\\entity\\column.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ToDos.razor",
-              "DocumentMoniker": "C:\\Users\\Volko\\ToDo\\ToDo\\Components\\Pages\\ToDos.razor",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\ToDos.razor",
               "RelativeDocumentMoniker": "ToDo\\Components\\Pages\\ToDos.razor",
-              "ToolTip": "C:\\Users\\Volko\\ToDo\\ToDo\\Components\\Pages\\ToDos.razor",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\ToDos.razor",
               "RelativeToolTip": "ToDo\\Components\\Pages\\ToDos.razor",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAAwGEAAAANAAAA",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-30T11:44:37.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Volko\\ToDo\\ToDo\\Program.cs",
-              "RelativeDocumentMoniker": "ToDo\\Program.cs",
-              "ToolTip": "C:\\Users\\Volko\\ToDo\\ToDo\\Program.cs",
-              "RelativeToolTip": "ToDo\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T11:44:08.187Z",
+              "WhenOpened": "2025-01-30T18:42:26.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ToDoService.cs",
-              "DocumentMoniker": "C:\\Users\\Volko\\ToDo\\ToDo\\ServiceClient\\ToDoService.cs",
-              "RelativeDocumentMoniker": "ToDo\\ServiceClient\\ToDoService.cs",
-              "ToolTip": "C:\\Users\\Volko\\ToDo\\ToDo\\ServiceClient\\ToDoService.cs",
-              "RelativeToolTip": "ToDo\\ServiceClient\\ToDoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Title": "Board.razor",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\Board.razor",
+              "RelativeDocumentMoniker": "ToDo\\Components\\Pages\\Board.razor",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Pages\\Board.razor",
+              "RelativeToolTip": "ToDo\\Components\\Pages\\Board.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-30T17:28:01.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToDoList.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Core\\Entity\\ToDoList.cs",
+              "RelativeDocumentMoniker": "Core\\Entity\\ToDoList.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Core\\Entity\\ToDoList.cs",
+              "RelativeToolTip": "Core\\Entity\\ToDoList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T11:43:57.29Z",
+              "WhenOpened": "2025-01-30T18:28:35.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "ToDo\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "ToDo\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-30T18:29:57.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ColumnClientService.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\ServiceClient\\ColumnClientService.cs",
+              "RelativeDocumentMoniker": "ToDo\\ServiceClient\\ColumnClientService.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDo\\ServiceClient\\ColumnClientService.cs",
+              "RelativeToolTip": "ToDo\\ServiceClient\\ColumnClientService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T17:57:20.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ColumnClientService.cs",
-              "DocumentMoniker": "C:\\Users\\Volko\\ToDo\\ToDo\\ServiceClient\\ColumnClientService.cs",
-              "RelativeDocumentMoniker": "ToDo\\ServiceClient\\ColumnClientService.cs",
-              "ToolTip": "C:\\Users\\Volko\\ToDo\\ToDo\\ServiceClient\\ColumnClientService.cs",
-              "RelativeToolTip": "ToDo\\ServiceClient\\ColumnClientService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Title": "ColumnController.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDoAPI\\Controllers\\ColumnController.cs",
+              "RelativeDocumentMoniker": "ToDoAPI\\Controllers\\ColumnController.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\ToDoAPI\\Controllers\\ColumnController.cs",
+              "RelativeToolTip": "ToDoAPI\\Controllers\\ColumnController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T11:43:56.71Z",
+              "WhenOpened": "2025-01-30T17:56:18.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ColumnService.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Application\\Service\\ColumnService.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\ColumnService.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Application\\Service\\ColumnService.cs",
+              "RelativeToolTip": "Application\\Service\\ColumnService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T17:46:59.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Column.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Core\\Entity\\Column.cs",
+              "RelativeDocumentMoniker": "Core\\Entity\\Column.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Core\\Entity\\Column.cs",
+              "RelativeToolTip": "Core\\Entity\\Column.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T17:29:43.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ToDoService.cs",
+              "DocumentMoniker": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Application\\Service\\ToDoService.cs",
+              "RelativeDocumentMoniker": "Application\\Service\\ToDoService.cs",
+              "ToolTip": "C:\\Users\\PC_Work\\source\\repos\\ToDo\\Application\\Service\\ToDoService.cs",
+              "RelativeToolTip": "Application\\Service\\ToDoService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwEcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T17:47:55.293Z",
               "EditorCaption": ""
             }
           ]

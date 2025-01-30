@@ -1,5 +1,4 @@
 ﻿@page "/Calendar"
-
 @page "/WeekCalendar"
 @using Core.Entity
 @inject ToDo.ServiceClient.ToDoService ToDoService
@@ -7,50 +6,60 @@
 <h3>Week Calendar</h3>
 
 <div class="calendar">
-   
     <div class="header">
+        <div class="time-header"></div>
         @foreach (var day in weekDays)
         {
-            <div class="day-header">
-                @day.ToString("dddd, MMM dd") 
+            <div class="day-header @(day.Date == DateTime.Today ? "today" : "")">
+                <div class="day-name">@day.ToString("dddd")</div>
+                <div class="day-date">@day.ToString("MMM dd")</div>
             </div>
         }
     </div>
 
-    <!-- Сетка задач -->
     <div class="body">
         @foreach (var hour in hours)
         {
             <div class="row">
-                <div class="hour">@hour</div> <!-- Часы -->
+                <div class="hour">@hour</div>
                 @foreach (var day in weekDays)
                 {
-                   
+                    <div class="day-cell @(day.Date == DateTime.Today ? "today" : "")">
+                        @if (events.TryGetValue((day.Date, hour), out var dayEvents))
+                        {
+                            @foreach (var evt in dayEvents)
+                            {
+                                <div class="event" style="background-color: @GetEventColor(evt)">
+                                    <div class="event-title">@evt.Name</div>
+                                    <div class="event-desc">@evt.Description</div>
+                                </div>
+                            }
+                        }
+                    </div>
                 }
             </div>
         }
     </div>
 </div>
 
-@code 
-{
-   
+@code {
     private DateTime[] weekDays;
-    private string[] hours = Enumerable.Range(0, 24).Select(h => $"{h}:00").ToArray(); 
-
-   
-    private Dictionary<(DateTime day, string hour), List<ToDoList>> events;
+    private string[] hours = Enumerable.Range(0, 24).Select(h => $"{h:00}:00").ToArray();
+    private Dictionary<(DateTime day, string hour), List<ToDoList>> events = new();
 
     protected override async Task OnInitializedAsync()
     {
-     
-        var startOfWeek = DateTime.Now.AddDays(-(int)DateTime.Now.DayOfWeek + 1); 
+        var startOfWeek = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek + 1);
         weekDays = Enumerable.Range(0, 7).Select(offset => startOfWeek.AddDays(offset)).ToArray();
 
-      
         var tasks = await ToDoService.GetAll();
+    }
 
-       
-       
+
+
+    private string GetEventColor(ToDoList evt)
+    {
+        // Add logic to determine event color based on priority or status
+        return "#007bff";
     }
 }

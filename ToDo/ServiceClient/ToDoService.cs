@@ -40,9 +40,9 @@ namespace ToDo.ServiceClient
 
         }
 
-        public async Task<bool>Delete(CancellationToken cancellationToken)
+        public async Task<bool>Delete(Guid Id, CancellationToken cancellationToken)
         {
-            var response = await _httpClient.DeleteAsync("api/ToDoTask/Update", cancellationToken);
+            var response = await _httpClient.DeleteAsync($"api/ToDoTask/Delete/{Id}", cancellationToken );
             if (response.IsSuccessStatusCode)
             {
                 return true;

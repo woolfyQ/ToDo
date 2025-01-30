@@ -1,6 +1,7 @@
 ﻿using Application.Service;
 using Core.Entity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ToDoAPI.Controllers
 {
@@ -41,6 +42,16 @@ namespace ToDoAPI.Controllers
         {
             await _columnService.GetById(Id);
             return Ok();
+        }
+
+
+        [HttpGet]
+        [Route("GelAll")]
+        public async Task<IActionResult>GetAll()
+        {
+            var columns = await _columnService.GetAll();
+            return Ok(columns); 
+
         }
 
 

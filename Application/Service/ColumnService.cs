@@ -1,5 +1,7 @@
 ﻿using Core.Entity;
 using Data;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace Application.Service
 {
@@ -18,7 +20,8 @@ namespace Application.Service
             {
                 Id = Guid.NewGuid(),
                 Name = column.Name,
-                ToDoList = column.ToDoList,
+                Order = column.Order,
+                Tasks = column.Tasks,
             };
             _context.Add(column);
             await _context.SaveChangesAsync();
@@ -31,6 +34,12 @@ namespace Application.Service
             return columns;
 
         }
+     
+        public async Task<IEnumerable<Column>> GetAll()
+        {
+            return await _context.Columns.ToListAsync();
+        }
+
 
         public async Task<Column> Update(Column column)
         {
@@ -42,7 +51,8 @@ namespace Application.Service
 
             column.Id = column.Id;
             column.Name = column.Name;
-            column.ToDoList = column.ToDoList;
+            column.Tasks = column.Tasks;
+            column.Order = column.Order;
 
             _context.Update(column);
             await _context.SaveChangesAsync();

@@ -33,6 +33,16 @@
   },
   {
     "ContainingType": "ToDoAPI.Controllers.ColumnController",
+    "Method": "GetAll",
+    "RelativePath": "api/Column/GelAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ColumnController",
     "Method": "GetById",
     "RelativePath": "api/Column/GetById",
     "HttpMethod": "GET",
@@ -82,7 +92,7 @@
   {
     "ContainingType": "ToDoAPI.Controllers.ToDoTaskController",
     "Method": "Delete",
-    "RelativePath": "api/ToDoTask/Delete",
+    "RelativePath": "api/ToDoTask/Delete/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -90,7 +100,7 @@
       {
         "Name": "Id",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

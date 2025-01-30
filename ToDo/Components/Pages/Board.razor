@@ -1,0 +1,72 @@
+﻿@page "/Board"
+@using Core.Entity
+@using ServiceClient
+@inject ColumnClientService ColumnService
+@inject ToDoService TodoService
+
+<div class="board-container">
+    <div class="board-header">
+        <h2>Task Board</h2>
+        <button class="btn-add-column" @onclick="ShowColumnForm">
+            <i class="fas fa-plus"></i> Add Column
+        </button>
+    </div>
+
+    @if (showColumnForm)
+    {
+        <div class="column-form-container">
+            <EditForm Model="@newColumn" OnValidSubmit="@CreateColumn">
+                <DataAnnotationsValidator />
+                <div class="form-group">
+                    <InputText @bind-Value="newColumn.Name" placeholder="Column name" />
+                    <ValidationMessage For="@(() => newColumn.Name)" />
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Create</button>
+                    <button type="button" class="btn-cancel" @onclick="HideColumnForm">Cancel</button>
+                </div>
+            </EditForm>
+        </div>
+    } 
+            </div>
+        }
+
+
+@code {
+    private Column newColumn = new();
+    private bool showColumnForm;
+    private Guid? draggedTaskId;
+    private IEnumerable<Column> columns;
+
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     columns = await ColumnService.GetAll();
+    // }
+
+    private void ShowColumnForm() => showColumnForm = true;
+    private void HideColumnForm() => showColumnForm = false;
+
+    private async Task EditColumn(Column column)
+    {
+        
+
+    }
+
+    private async Task DeleteColumn(Guid Id)
+    {
+
+
+    }
+
+    private async Task CreateColumn()
+    {
+        await ColumnService.Create(newColumn);
+    }
+
+    private void OnDragStart(Guid taskId)
+    {
+        draggedTaskId = taskId;
+    }
+
+  
+}

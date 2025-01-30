@@ -1,12 +1,47 @@
 ﻿@page "/"
+@inject NavigationManager NavigationManager
 
-<PageTitle>Home</PageTitle>
+<div class="home-container">
+    <div class="hero-section">
+        <h1>Welcome to TaskMaster</h1>
+        <p class="tagline">Organize your life, one task at a time</p>
+        <button class="get-started-btn" @onclick="@(() => NavigationManager.NavigateTo("/todos"))">
+            Get Started
+        </button>
+    </div>
 
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fas fa-list-check"></i>
+            <h3>Task Management</h3>
+            <p>Create, organize, and track your tasks efficiently</p>
+        </div>
 
-Welcome to ToDo app.
+        <div class="feature-card">
+            <i class="fas fa-calendar"></i>
+            <h3>Calendar View</h3>
+            <p>Visualize your tasks in a weekly calendar format</p>
+        </div>
 
-@code{
+        <div class="feature-card">
+            <i class="fas fa-mobile-screen"></i>
+            <h3>Mobile Friendly</h3>
+            <p>Access your tasks anywhere, anytime</p>
+        </div>
+    </div>
 
-
-
-}
+    <div class="quick-stats">
+        <div class="stat-card">
+            <span class="stat-number">Simple</span>
+            <span class="stat-label">Interface</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">Fast</span>
+            <span class="stat-label">Performance</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">Secure</span>
+            <span class="stat-label">Platform</span>
+        </div>
+    </div>
+</div>

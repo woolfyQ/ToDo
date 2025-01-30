@@ -27,6 +27,33 @@ namespace ToDo.ServiceClient
 
         }
 
+        public async Task<IEnumerable<Column>> GetAll()
+        {
+            var response = await _httpClient.GetAsync("api/Columns/GetAll");
+            if (response.IsSuccessStatusCode)
+            {
+                var columns = await response.Content.ReadFromJsonAsync<List<Column>>();
+                return columns ?? new List<Column>();
+            }
+            else
+            {
+                throw new Exception("Failed to get columns");
+            }
+        }
+
+        public async Task<bool> MoveTask(Guid taskId, Guid columnId)
+        {
+            var request = new
+            {
+                TaskId = taskId,
+                ColumnId = columnId
+            };
+
+            var response = await _httpClient.PutAsJsonAsync($"api/ToDoTask/MoveTask", request);
+            return response.IsSuccessStatusCode;
+        }
+
+
         public async Task<bool>Update(Column column)
         {
 
