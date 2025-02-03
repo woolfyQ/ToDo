@@ -14,7 +14,7 @@ namespace ToDo.ServiceClient
 
         public async Task<bool> Create(Column column)
         {
-            var response = await _httpClient.PostAsJsonAsync("api/Columns/Create", column);
+            var response = await _httpClient.PostAsJsonAsync("api/Column/Create", column);
             if(response.IsSuccessStatusCode)
             {
                 return true;
@@ -29,7 +29,7 @@ namespace ToDo.ServiceClient
 
         public async Task<IEnumerable<Column>> GetAll()
         {
-            var response = await _httpClient.GetAsync("api/Columns/GetAll");
+            var response = await _httpClient.GetAsync("api/Column/GelAll");
             if (response.IsSuccessStatusCode)
             {
                 var columns = await response.Content.ReadFromJsonAsync<List<Column>>();
@@ -41,23 +41,10 @@ namespace ToDo.ServiceClient
             }
         }
 
-        public async Task<bool> MoveTask(Guid taskId, Guid columnId)
-        {
-            var request = new
-            {
-                TaskId = taskId,
-                ColumnId = columnId
-            };
-
-            var response = await _httpClient.PutAsJsonAsync($"api/ToDoTask/MoveTask", request);
-            return response.IsSuccessStatusCode;
-        }
-
-
         public async Task<bool>Update(Column column)
         {
 
-            var response = await _httpClient.PutAsJsonAsync("api/Columns/Update", column);
+            var response = await _httpClient.PutAsJsonAsync("api/Column/Update", column);
             if(response.IsSuccessStatusCode)
             {
                 return true;
@@ -70,10 +57,10 @@ namespace ToDo.ServiceClient
 
 
         }
-         public async Task<bool>Delete(CancellationToken cancellationToken)
+         public async Task<bool>Delete(Guid Id,CancellationToken cancellationToken)
         {
 
-            var response = await _httpClient.DeleteAsync("api/Columns/Update", cancellationToken);
+            var response = await _httpClient.DeleteAsync($"api/Column/Delete/{Id}", cancellationToken);
             if (response.IsSuccessStatusCode)
             {
                 return true;
@@ -88,7 +75,7 @@ namespace ToDo.ServiceClient
 
         public async Task<bool> GetById(CancellationToken cancellationToken)
         {
-            var response = await _httpClient.GetAsync("api/Columns/GetById", cancellationToken);
+            var response = await _httpClient.GetAsync("api/Column/GetById", cancellationToken);
             if (response.IsSuccessStatusCode)
             {
                 return true;

@@ -18,7 +18,7 @@
   {
     "ContainingType": "ToDoAPI.Controllers.ColumnController",
     "Method": "Delete",
-    "RelativePath": "api/Column/Delete",
+    "RelativePath": "api/Column/Delete/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -26,7 +26,7 @@
       {
         "Name": "Id",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

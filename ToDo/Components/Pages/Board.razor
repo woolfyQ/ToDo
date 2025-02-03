@@ -1,72 +1,101 @@
 ﻿@page "/Board"
 @using Core.Entity
 @using ServiceClient
+@rendermode InteractiveServer
 @inject ColumnClientService ColumnService
 @inject ToDoService TodoService
 
 <div class="board-container">
-    <div class="board-header">
-        <h2>Task Board</h2>
-        <button class="btn-add-column" @onclick="ShowColumnForm">
-            <i class="fas fa-plus"></i> Add Column
-        </button>
-    </div>
-
-    @if (showColumnForm)
-    {
-        <div class="column-form-container">
-            <EditForm Model="@newColumn" OnValidSubmit="@CreateColumn">
-                <DataAnnotationsValidator />
-                <div class="form-group">
-                    <InputText @bind-Value="newColumn.Name" placeholder="Column name" />
-                    <ValidationMessage For="@(() => newColumn.Name)" />
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="btn-submit">Create</button>
-                    <button type="button" class="btn-cancel" @onclick="HideColumnForm">Cancel</button>
-                </div>
-            </EditForm>
+    <EditForm Model="@newColumn" FormName="newColumn" OnValidSubmit="CreateColumn">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <InputText id="columnName" @bind-Value="newColumn.Name" placeholder="Enter column name" />
+            <ValidationMessage For="@(() => newColumn.Name)" />
         </div>
-    } 
+        <button type="submit">Create</button>
+    </EditForm>
+
+    <div class="columns-container">
+        @foreach (var column in columns)
+        {
+            <div class="column">
+                <h3>@column.Name</h3>
+                @if (column.Tasks != null)
+                {
+                    foreach (var task in column.Tasks)
+                    {
+                        <div class="task">
+                            <p>@task.Name</p>
+                            <p>@task.Description</p>
+                        </div>
+                    }
+                }
+                <button @onclick="() => EditColumn(column)">Edit</button>
+                <button @onclick="() => DeleteColumn(column.Id)">Delete</button>
             </div>
         }
-
+    </div>
+</div>
 
 @code {
-    private Column newColumn = new();
-    private bool showColumnForm;
-    private Guid? draggedTaskId;
-    private IEnumerable<Column> columns;
+    [SupplyParameterFromForm(FormName = "newColumn")]
+    private Column newColumn { get; set; } = new();
+    private IEnumerable<Column> columns = new List<Column>();
 
-    // protected override async Task OnInitializedAsync()
-    // {
-    //     columns = await ColumnService.GetAll();
-    // }
-
-    private void ShowColumnForm() => showColumnForm = true;
-    private void HideColumnForm() => showColumnForm = false;
-
-    private async Task EditColumn(Column column)
+    protected override async Task OnInitializedAsync()
     {
-        
-
+        await LoadColumns();
     }
 
-    private async Task DeleteColumn(Guid Id)
+    private async Task LoadColumns()
     {
-
-
+        try
+        {
+            columns = await ColumnService.GetAll();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading columns: {ex.Message}");
+        }
     }
 
     private async Task CreateColumn()
     {
-        await ColumnService.Create(newColumn);
+        try
+        {
+            await ColumnService.Create(newColumn);
+            await LoadColumns();
+            newColumn = new Column();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error creating column: {ex.Message}");
+        }
     }
 
-    private void OnDragStart(Guid taskId)
+    private async Task EditColumn(Column column)
     {
-        draggedTaskId = taskId;
+        try
+        {
+            await ColumnService.Update(column);
+            await LoadColumns();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error editing column: {ex.Message}");
+        }
     }
 
-  
+    private async Task DeleteColumn(Guid id)
+    {
+        try
+        {
+            await ColumnService.Delete(id, CancellationToken.None);
+            await LoadColumns();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting column: {ex.Message}");
+        }
+    }
 }

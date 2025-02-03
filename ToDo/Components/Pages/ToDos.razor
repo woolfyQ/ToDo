@@ -80,29 +80,29 @@
     public ToDoList toDoList { get; set; } = new();
     private string errorMessage;
     private IEnumerable<ToDoList> toDoLists;
-   
-        private async Task Delete(Guid taskId)
+
+    private async Task Delete(Guid taskId)
+    {
+        try
         {
-            try
+            var result = await ToDoService.Delete(taskId, CancellationToken.None);
+            if (result)
             {
-                var result = await ToDoService.Delete(taskId, CancellationToken.None);
-                if (result)
-                {
-                    toDoLists = await ToDoService.GetAll();
-                    errorMessage = null;
-                }
-                else
-                {
-                    errorMessage = "Failed to delete the task.";
-                }
+                toDoLists = await ToDoService.GetAll();
+                errorMessage = null;
             }
-            catch (Exception ex)
+            else
             {
-                errorMessage = $"An error occurred while deleting: {ex.Message}";
+                errorMessage = "Failed to delete the task.";
             }
-            StateHasChanged();
         }
-    
+        catch (Exception ex)
+        {
+            errorMessage = $"An error occurred while deleting: {ex.Message}";
+        }
+        StateHasChanged();
+    }
+
 
     private async Task HandleValidSubmit()
     {
@@ -120,6 +120,7 @@
             {
                 errorMessage = "Failed to create the task. Please try again.";
             }
+            var Lists = await ToDoService.GetAll();
         }
         catch (Exception ex)
         {

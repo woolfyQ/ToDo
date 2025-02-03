@@ -1,7 +1,6 @@
 ﻿using Core.Entity;
 using Data;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 
 namespace Application.Service
 {
@@ -20,7 +19,6 @@ namespace Application.Service
             {
                 Id = Guid.NewGuid(),
                 Name = column.Name,
-                Order = column.Order,
                 Tasks = column.Tasks,
             };
             _context.Add(column);
@@ -52,7 +50,6 @@ namespace Application.Service
             column.Id = column.Id;
             column.Name = column.Name;
             column.Tasks = column.Tasks;
-            column.Order = column.Order;
 
             _context.Update(column);
             await _context.SaveChangesAsync();
